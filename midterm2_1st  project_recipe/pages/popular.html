@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Recipes</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+<header>
+    <!-- Header section containing the app name and navigation links -->
+    <h1>MyRecipesAPP</h1>
+    <nav>
+        <!-- Navigation links for accessing different sections of the app -->
+        <a href="../pages/index.html" id="searchLink">Search Recipes</a>
+        <a href="../pages/popular.html" id="popularLink">Popular</a>
+        <a href="../pages/categories.html" id="categoriesLink">Categories</a>
+        <a href="../pages/favorites.html" id="favoritesLink">Favorites</a>
+        <!-- Each link navigates to a different feature of the app -->
+    </nav>
+</header>
+<div id="loading">Loading...</div>
+<!-- Loading indicator that appears while popular recipes are being fetched -->
+
+<section id="popularRecipes" class="popular-recipes" style="display: none;">
+    <!-- Main section displaying popular recipes, initially hidden until data is loaded -->
+    <h2 class="section-title">Popular Recipes</h2>
+    <!-- Title for the popular recipes section -->
+    <div class="recipe-list" id="popularRecipesContainer"></div>
+    <!-- Container for listing each popular recipe -->
+</section>
+
+<script src="../scripts/script.js"></script>
+<!-- Links the JavaScript file containing functions for managing recipes -->
+<script>loadPopularRecipes();</script>
+<!-- Calls the function to load popular recipes when the page is loaded -->
+</body>
+</html>

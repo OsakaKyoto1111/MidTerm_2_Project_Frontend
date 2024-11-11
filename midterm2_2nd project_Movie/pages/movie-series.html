@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Series</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Series</h1>
+        <div class="header-controls">
+            <button onclick="goBack()" class="back_to_search">Back to Search</button> <!-- Button to return to the search page -->
+            <select id="sort-option2" onchange="sortMovies()"> <!-- Dropdown to select sort criteria -->
+                <option value="popularity.desc">Most Popular</option>
+                <option value="release_date.desc">Newest</option>
+                <option value="vote_average.desc">Top Rating</option>
+            </select>
+        </div>
+    </header>
+    <main>
+        <div id="loading">Loading...</div> <!-- Loading indicator shown while data is being fetched -->
+        <div id="movies-grid" class="movies-grid"></div> <!-- Container to display the movie series in a grid format -->
+    </main>
+    <script src="../js/series.js"></script> <!-- JavaScript file to manage the movie series functionality -->
+</body>
+</html>

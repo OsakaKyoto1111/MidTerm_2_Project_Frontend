@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Weather Forecast</title> <!-- The title of the webpage -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="header"> <!-- Header section -->
+        <div class="container">
+            <div class="header__wrapper"> <!-- Wrapper for header elements -->
+                <div class="header__content"> <!-- Container for header content -->
+                    <img src="../icon/weather-news.png" alt="Icon" id="header-icon"> <!-- Logo or icon for the weather app -->
+                    <h1 id="site-title">Weather Forecast APP</h1> <!-- Main title of the app -->
+                </div>
+                <div id="temp-unit"> <!-- Button to toggle temperature unit between Celsius and Fahrenheit -->
+                    <button onclick="toggleTempUnit()">°C / °F</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section id="weather-container"> <!-- Main section for weather input and display -->
+        <div class="container">
+            <h2>Enter city</h2> <!-- Instructional title for entering a city -->
+            <div class="input-container"> <!-- Container for input field and error message -->
+                <input type="text" id="city" placeholder="Enter city"> <!-- Input field for the city name -->
+                <span id="error-message" style="color: red;"></span> <!-- Error message placeholder, displayed in red -->
+            </div>
+            
+            <button onclick="getWeather()">Get Weather</button> <!-- Button to trigger weather data fetch -->
+            
+            <div id="temp-div"></div> <!-- Container for displaying temperature -->
+            <div id="weather-info"></div> <!-- Container for general weather information like description, humidity, etc. -->
+            <img id="weather-icon" src="" alt="" style="display:none;"> <!-- Weather icon, initially hidden until data is fetched -->
+            
+            <div id="hourly-forecast"></div> <!-- Container for displaying the hourly weather forecast -->
+            <div id="daily-forecast"></div> <!-- Container for displaying the daily weather forecast -->
+        </div>
+    </section>
+    <script src="../js/script.js"></script> <!-- Link to the JavaScript file containing weather functions -->
+</body>
+</html>

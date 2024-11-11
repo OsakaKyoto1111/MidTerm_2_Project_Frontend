@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Categories</title>
+    <link rel="stylesheet" href="../style/catergories.css">
+</head>
+<body>
+<header>
+    <!-- Header section with the app name and navigation links -->
+    <h1>MyRecipesAPP</h1>
+    <nav>
+        <!-- Navigation links for different pages within the app -->
+        <a href="../pages/index.html" id="searchLink">Search Recipes</a>
+        <a href="../pages/popular.html" id="popularLink">Popular</a>
+        <a href="../pages/categories.html" id="categoriesLink">Categories</a>
+        <a href="../pages/favorites.html" id="favoritesLink">Favorites</a>
+    </nav>
+</header>
+
+<section class="categories">
+    <!-- Main section that displays recipe categories -->
+    <h2 id="mainCategoryTitle">Recipe Categories</h2>
+    <!-- Secondary title, initially hidden, that changes based on selected category -->
+    <h2 id="categoryTitle" style="display: none;"></h2>
+
+    <div class="category-cards" id="categoryCards">
+        <!-- Container for the category cards (breakfast, lunch, etc.) -->
+        <div class="category-card">
+            <!-- Category card for breakfast with an image and a button -->
+            <img src="../photo/zavtrak.jpg" alt="Breakfast" class="category-image">
+            <button onclick="loadCategory('breakfast')">Breakfast</button>
+            <!-- Calls a function to load recipes under the 'breakfast' category -->
+        </div>
+        <div class="category-card">
+            <!-- Category card for lunch with an image and a button -->
+            <img src="../photo/obed.jpg" alt="Lunch" class="category-image">
+            <button onclick="loadCategory('lunch')">Lunch</button>
+            <!-- Calls a function to load recipes under the 'lunch' category -->
+        </div>
+        <div class="category-card">
+            <!-- Category card for dinner with an image and a button -->
+            <img src="../photo/dinner.jpg" alt="Dinner" class="category-image">
+            <button onclick="loadCategory('dinner')">Dinner</button>
+            <!-- Calls a function to load recipes under the 'dinner' category -->
+        </div>
+        <div class="category-card">
+            <!-- Category card for desserts with an image and a button -->
+            <img src="../photo/desert.jpg" alt="Desserts" class="category-image">
+            <button onclick="loadCategory('dessert')">Desserts</button>
+            <!-- Calls a function to load recipes under the 'dessert' category -->
+        </div>
+    </div>
+    <div id="loading" style="display:none;">Loading...</div>
+    <!-- Loading message displayed when recipes are being fetched -->
+
+    <div id="recipeList" class="recipe_list" style="display: none;"></div>
+    <!-- Container for the list of recipes, initially hidden -->
+
+    <button id="backButton" style="display:none;" onclick="showCategories()">Back</button>
+    <!-- Back button to return to category view from a specific category list, initially hidden -->
+</section>
+
+<script src="../scripts/category.js"></script>
+<!-- Links the JavaScript file that contains functions to manage categories and recipes -->
+</body>
+</html>

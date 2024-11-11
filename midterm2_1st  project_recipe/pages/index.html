@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recipes</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+<header>
+    <!-- Header section containing the app name and navigation menu -->
+    <h1>MyRecipesAPP</h1>
+    <nav>
+        <!-- Navigation links for various sections of the app -->
+        <a href="../pages/index.html" id="searchLink">Search Recipes</a>
+        <a href="../pages/popular.html" id="popularLink">Popular</a>
+        <a href="../pages/categories.html" id="categoriesLink">Categories</a>
+        <a href="../pages/favorites.html" id="favoritesLink">Favorites</a>
+        <!-- Links to different pages within the app for easy access -->
+    </nav>
+</header>
+
+<section id="main">
+    <!-- Main section for searching recipes -->
+    <h2 class="section-title">Find a Recipe</h2>
+    <!-- Title for the search section -->
+    <div class="search-container">
+        <!-- Search input field and button to find recipes by name -->
+        <input type="text" id="searchInput" placeholder="Enter recipe name...">
+        <!-- Input field for users to type in a recipe name -->
+        <button onclick="searchRecipes()">Search</button>
+        <!-- Button to initiate the search functionality using the specified function -->
+    </div>
+    <div id="loading" style="display: none;">Loading...</div>
+    <!-- Loading message displayed when search is in progress, initially hidden -->
+    <div id="recipeList" class="recipe-list"></div>
+    <!-- Container to display search results as a list of recipes -->
+</section>
+
+<script src="../scripts/script.js"></script>
+<!-- Links the JavaScript file for handling search functionality and interactions -->
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="../css/style_for_details.css">
+</head>
+<body>
+    <header>
+        <h1 id="movie-title">Movie Title</h1> <!-- Display movie title dynamically based on fetched data -->
+        <button onclick="goBack()">Go Back</button> <!-- Button to navigate back to the previous page -->
+    </header>
+    <main>
+        <img id="movie-poster" src="" alt="Movie Poster" style="width: 300px; height: auto;"> <!-- Display movie poster dynamically; fallback provided in JS if not available -->
+        <div id="movie-overview"></div> <!-- Display the movie overview (description) -->
+        <div id="movie-rating"></div> <!-- Display the movie's rating -->
+        <div id="movie-release-date"></div> <!-- Display the movie's release date -->
+    </main>
+    <script src="../js/movie-details.js"></script> <!-- JavaScript file to handle movie details functionality -->
+</body>
+</html>

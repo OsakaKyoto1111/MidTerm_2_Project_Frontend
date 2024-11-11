@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Details</title>
+    <link rel="stylesheet" href="../style/recipe.css">
+</head>
+<body>
+    <div class="recipe-details-container">
+        <!-- Main container for displaying detailed information about a recipe -->
+        <div class="buttons">
+            <!-- Button to navigate back to the previous page -->
+            <button id="backButton" onclick="goBack()">← Back</button>
+            <!-- Button to add the recipe to favorites -->
+            <button id="favoriteButton" onclick="addToFavorites()">Add to Favorites</button>
+        </div>
+        <h1 id="recipeTitle">Loading...</h1>
+        <!-- Displays the recipe title; initially shows 'Loading...' while fetching data -->
+        <img id="recipeImage" src="" alt="Recipe Image">
+        <!-- Displays the image of the recipe -->
+        <p><strong>Ingredients:</strong></p>
+        <ul id="ingredientsList"></ul>
+        <!-- List for displaying ingredients of the recipe -->
+        <p><strong>Instructions:</strong></p>
+        <p id="instructions"></p>
+        <!-- Paragraph for displaying step-by-step cooking instructions -->
+        <p><strong>Nutrition:</strong> <span id="nutritionInfo"></span></p>
+        <!-- Displays nutritional information of the recipe -->
+    </div>
+
+    <script src="../scripts/recipe.js"></script>
+    <!-- Links the JavaScript file for handling recipe details and user interactions -->
+</body>
+</html>

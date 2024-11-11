@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Recipes</title>
+    <link rel="stylesheet" href="../style/favorites.css">
+</head>
+<body>
+<header>
+    <!-- Header section with app name and navigation links -->
+    <h1>MyRecipesAPP</h1>
+    <nav>
+        <!-- Navigation links for different pages within the app -->
+        <a href="../pages/index.html" id="searchLink">Search Recipes</a>
+        <a href="../pages/popular.html" id="popularLink">Popular</a>
+        <a href="../pages/categories.html" id="categoriesLink">Categories</a>
+        <a href="../pages/favorites.html" id="favoritesLink">Favorites</a>
+        <!-- Highlights the current page as "Favorites" in the navigation menu -->
+    </nav>
+</header>
+
+<section id="favoritesSection">
+    <!-- Main section displaying favorite recipes -->
+    <h2 class="section-title">Favorite Recipes</h2>
+    <!-- Title for the favorite recipes section -->
+    <div id="favoritesList" class="recipe-list"></div>
+    <!-- Container for displaying the list of favorite recipes -->
+    <p id="noFavorites" style="display: none;">You have no favorite recipes.</p>
+    <!-- Message to show when there are no favorite recipes, initially hidden -->
+</section>
+
+<script src="../scripts/favorites.js"></script>
+<!-- Links to the JavaScript file for managing the favorites functionality -->
+</body>
+</html>

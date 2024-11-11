@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies App</title> 
+    <link rel="stylesheet" href="../css/styles.css"> 
+</head>
+<body>
+    <header>
+        <h1>MoviesAPP</h1> <!-- Main title of the app displayed at the top. -->
+        <input type="text" id="search-input" placeholder="Search for movies..." /> <!-- Search input for users to type movie queries. -->
+        <div id="suggestions"></div> <!-- Container for displaying search suggestions when the user types. -->
+    </header>
+    <main>
+        <div class="sort-options">
+            <!-- Buttons to sort movies by popularity, release date, and rating, with event handlers for sorting. -->
+            <button onclick="sortMovies('popularity.desc')">Sort by Popularity</button>
+            <button onclick="sortMovies('release_date.desc')">Sort by Release Date</button>
+            <button onclick="sortMovies('vote_average.desc')">Sort by Rating</button>
+            <button onclick="showWatchlist()" class="show_Watch_list">View Watchlist</button> <!-- Button to view the user's watchlist. -->
+        </div>
+        <div id="movies-grid" class="movies-grid"></div> <!-- Container for displaying the grid of movie cards. -->
+        <div id="movie-details" class="movie-details"></div> <!-- Container for displaying detailed information about a specific movie. -->
+    </main>
+    <script src="../js/script.js"></script> <!-- Links to the JavaScript file that contains app functionality. -->
+</body>
+</html>

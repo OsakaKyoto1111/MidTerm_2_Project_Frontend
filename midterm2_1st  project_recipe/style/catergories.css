@@ -1,0 +1,236 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eae2de;
+    color: #333;
+}
+
+header {
+    background-color: #5e60ce;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+nav a.active {
+    color: red;
+    text-decoration: none;
+}
+
+.categories {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#mainCategoryTitle {
+    font-size: 28px;
+    font-weight: bold;
+    color: #5e60ce;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.category-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.category-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+#categoryTitle{
+    font-size: 28px;
+    font-weight: bold;
+    color: #5e60ce;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+}
+
+.category-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.category-card button {
+    background-color: #5e60ce;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.category-card button:hover {
+    background-color: #4e4cce;
+}
+
+.recipe_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+
+.recipe-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-10px);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.recipe-card h3 {
+    font-size: 20px;
+    color: #5e60ce;
+    margin-bottom: 12px;
+}
+
+.recipe-card button {
+    background-color: #5e60ce;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.recipe-card button:hover {
+    background-color: #4e4cce;
+}
+
+
+#loading {
+    font-size: 20px;
+    font-weight: bold;
+    color: #5e60ce;
+    text-align: center;
+    padding: 20px;
+}
+
+#backButton {
+    background-color: #5e60ce;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+#backButton:hover {
+    background-color: #4e4cce;
+}
+
+@media (max-width: 768px) {
+    .category-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recipe_list {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    }
+
+    .category-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+    header nav a {
+        font-size: 14px;
+    }
+}
