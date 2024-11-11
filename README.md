@@ -81,6 +81,6 @@ The app connects to a weather forecast API to retrieve real-time data. When a us
 
 ![Weather Screenshot 1](screen/weather/weather1.png)
 ![Weather Screenshot 2](screen/weather/weather2.png)
-![Weather Screenshot 3](screen/weather/weather4.png)
+![Weather Screenshot 3](screen/weather/weather3.png)
 ![Weather Screenshot 4](screen/weather/weather4.png)
 "# MidTerm_2_Project_Frontend" 
